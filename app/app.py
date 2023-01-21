@@ -21,7 +21,7 @@ def main():
         html = f.read()
 
     BA = BrowserApi()
-    #apiクラスにwindowを渡しておくことで後から利用しやすくする
+
     BA.window = webview.create_window(title   = "Test App",
                                        html   = html,
                                        js_api = BA,

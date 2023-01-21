@@ -2,17 +2,13 @@
 	<head>
 		<title>pywebview TEST</title>
 	</head>
-
 	<body>
-		<h1>【pywebview】javascriptでPythonのAPIを呼び出す</h1>
+		<h1>【pywebview】javascriptでPython側のAPIを呼び出す</h1>
 		<button id="click_btn">Button</button>
     <div id="append_area"></div>
 	</body>
-
 	<script>
-		// <!--ドキュメントが準備出来次第いろいろする-->
 		window.addEventListener("pywebviewready", function() {
-			// <!--buttonにイベントを追加、python側のAPIを呼び出す-->
 			document.getElementById("click_btn").addEventListener("click", function(){
 				pywebview.api.strAppend();
 			})
